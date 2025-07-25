@@ -1,6 +1,6 @@
 const sections = document.querySelectorAll("section");
 const navLinks = document.querySelectorAll("nav a");
-const getCourseBtn = document.querySelector("#get-course-btn"); // ← Add this
+const getCourseBtn = document.querySelector("#get-course-btn"); 
 
 const observer = new IntersectionObserver(
   (entries) => {
@@ -8,7 +8,7 @@ const observer = new IntersectionObserver(
       if (entry.isIntersecting) {
         // Remove "active" from all
         navLinks.forEach((link) => link.classList.remove("active"));
-        getCourseBtn.classList.remove("active"); // ← Also remove from button
+        getCourseBtn.classList.remove("active");
 
         // Add "active" to matched nav link
         navLinks.forEach((link) => {
